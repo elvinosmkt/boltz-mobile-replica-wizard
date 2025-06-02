@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/Button';
@@ -145,22 +144,43 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CEO Section */}
+      {/* CEO Section - Updated */}
       <section className="bg-white py-16 px-5 lg:py-24">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-center text-black font-bold text-2xl mb-12 lg:text-4xl">
+          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
             Conheça nosso CEO
           </h2>
 
-          <div className="bg-gray-100 rounded-lg p-8 flex flex-col md:flex-row items-center gap-8">
-            <div className="w-32 h-32 bg-gray-300 rounded-full flex-shrink-0"></div>
-            <div className="text-center md:text-left">
-              <h3 className="text-black font-bold text-xl mb-2">Ismael Moreira</h3>
-              <p className="text-gray-600 text-sm mb-4">
-                Com mais de 20 anos de experiência no setor de tecnologia biométrica, Ismael Moreira lidera a OpenBio na missão de transformar a identificação digital no Brasil. Sua visão inovadora e dedicação à excelência técnica estabeleceram a empresa como referência nacional em soluções biométricas.
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/c94f03e6-5f77-4d2e-a259-8a140e589c9f.png" 
+                alt="Ismael Akiyama - CEO" 
+                className="w-64 h-64 rounded-lg mx-auto mb-4 object-cover"
+              />
+              <h3 className="font-bold text-lg text-black">Ismael Akiyama</h3>
+              <p className="text-gray-600">CEO do Grupo Akiyama</p>
+            </div>
+            
+            <div className="text-gray-600">
+              <p className="mb-4">
+                Ismael Akiyama é o fundador e CEO do Grupo Akiyama, 
+                um ecossistema de empresas especializadas em 
+                tecnologia, business intelligence e soluções para o 
+                setor público. Nascinso, formou-se na Akiyama IQ.
               </p>
-              <p className="text-gray-600 text-sm">
-                Sob sua liderança, a OpenBio desenvolveu tecnologias que atendem desde instituições governamentais até o setor privado, sempre mantendo os mais altos padrões de segurança e confiabilidade.
+              <p className="mb-4">
+                Com visão estratégica e foco em inovação ele 
+                desenvolveu soluções que transformaram processos 
+                para reconhecimento, autenticação e gestão de 
+                identidades.
+              </p>
+              <p>
+                Atualmente lidera o grupo na consolidação como 
+                referência no setor, fornecendo soluções para governos, 
+                instituições financeiras e diversas outras áreas que 
+                necessitam de segurança de dados e identificação de 
+                pessoas.
               </p>
             </div>
           </div>

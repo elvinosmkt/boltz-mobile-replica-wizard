@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/Button';
@@ -24,44 +25,108 @@ const BankingSolution = () => {
         </div>
       </section>
 
-      {/* CEO Section */}
+      {/* Leitores Lumidigm Section */}
       <section className="bg-white py-16 px-5 lg:py-24">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
-            Conheça nosso CEO
+          <h2 className="text-black font-bold text-2xl mb-6 lg:text-4xl text-center">
+            Leitores Lumidigm
           </h2>
+          
+          <p className="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
+            Equipamento baseado em sistema 
+            multimodal para multiples
+            campanha de leituras Lumidigm de 
+            alta performance utilizando técnica 
+            de tecnologia espectral.
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="text-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <h3 className="text-black font-bold text-xl mb-4">A tecnologia multispectral 
+              permite que se obtenha dos diferentes 
+              camadas da pele uma informação 
+              segmentando imagens de digital 
+              otimizado à fingerprint para 
+              detectar e anular todos os tipos 
+              de fraude.</h3>
+            </div>
+            <div>
+              {/* Placeholder for description */}
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 text-center">
+            <div className="bg-gray-100 rounded-lg p-6">
               <img 
-                src="/lovable-uploads/c94f03e6-5f77-4d2e-a259-8a140e589c9f.png" 
-                alt="Ismael Akiyama - CEO" 
-                className="w-64 h-64 rounded-lg mx-auto mb-4 object-cover"
+                src="/lovable-uploads/a89ab407-408d-4675-b444-6f88fcd405c2.png" 
+                alt="Lumidigm M421" 
+                className="w-48 h-48 object-contain mx-auto mb-4"
               />
-              <h3 className="font-bold text-lg text-black">Ismael Akiyama</h3>
-              <p className="text-gray-600">CEO do Grupo Akiyama</p>
+              <h3 className="font-bold text-lg text-black">Lumidigm<br />M421</h3>
             </div>
             
-            <div className="text-gray-600">
-              <p className="mb-4">
-                Ismael Akiyama é o fundador e CEO do Grupo Akiyama, 
-                um ecossistema de empresas especializadas em 
-                tecnologia, business intelligence e soluções para o 
-                setor público. Nascinso, formou-se na Akiyama IQ.
-              </p>
-              <p className="mb-4">
-                Com visão estratégica e foco em inovação ele 
-                desenvolveu soluções que transformaram processos 
-                para reconhecimento, autenticação e gestão de 
-                identidades.
-              </p>
-              <p>
-                Atualmente lidera o grupo na consolidação como 
-                referência no setor, fornecendo soluções para governos, 
-                instituições financeiras e diversas outras áreas que 
-                necessitam de segurança de dados e identificação de 
-                pessoas.
-              </p>
+            <div className="bg-gray-100 rounded-lg p-6">
+              <img 
+                src="/lovable-uploads/72ea4390-0913-41a4-b804-d0bd5b0e2734.png" 
+                alt="Lumidigm V521" 
+                className="w-48 h-48 object-contain mx-auto mb-4"
+              />
+              <h3 className="font-bold text-lg text-black">Lumidigm<br />V521</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Diferenciais Section */}
+      <section className="bg-gray-100 py-16 px-5 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
+            Diferenciais
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/95238033-e822-44a8-b2c0-9f2b90e565ea.png" 
+                  alt="Funções de segurança" 
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-black">Funções de segurança premium digital</h3>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/f7f48f03-dffa-4003-8312-42f51e9d3e6a.png" 
+                  alt="Operações autônomas" 
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-black">Operações autônomas/ automáticas</h3>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/60862ae3-255d-4442-803e-3e74713a80d6.png" 
+                  alt="Sistema tamper-proof" 
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-black">Sistema de tamper-proof</h3>
+            </div>
+
+            <div className="text-center">
+              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <img 
+                  src="/lovable-uploads/77339e0f-c64b-473a-a90a-84f940bdcc33.png" 
+                  alt="Criptografia embarcada" 
+                  className="w-8 h-8"
+                />
+              </div>
+              <h3 className="font-bold text-lg mb-2 text-black">Criptografia embarcada</h3>
             </div>
           </div>
         </div>
@@ -142,51 +207,13 @@ const BankingSolution = () => {
         </div>
       </section>
 
-      {/* Diferenciais Section */}
-      <section className="bg-gray-100 py-16 px-5 lg:py-24">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
-            Diferenciais
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">🔧</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Funções de segurança premium digital</h3>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">⚙️</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Operações autônomas/ automáticas</h3>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">🛡️</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Sistema de tamper-proof</h3>
-            </div>
-
-            <div className="text-center">
-              <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">🔐</span>
-              </div>
-              <h3 className="font-bold text-lg mb-2">Criptografia embarcada</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="relative py-32 px-5 lg:py-40 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/70fc6161-48f3-4330-be24-855b644eaa4a.png)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
           <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
-            Transforme seus processos com segurança
+            Descubra como podemos elevar a segurança<br />
+            e a confiabilidade dos serviços bancários
           </h2>
           <Link to="/contato">
             <Button className="mx-auto">Fale conosco</Button>
