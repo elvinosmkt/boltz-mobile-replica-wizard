@@ -1,9 +1,15 @@
 
 import React, { useState } from 'react';
-import { Menu, Search } from 'lucide-react';
+import { Menu, Search, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 import { MobileMenu } from './MobileMenu';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu';
 
 export const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,9 +21,29 @@ export const NavBar = () => {
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex lg:items-center lg:space-x-8">
-          <Link to="/solucoes" className="text-white hover:text-boltz-purple transition-colors">
-            Soluções
-          </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="text-white hover:text-boltz-purple transition-colors flex items-center space-x-1">
+              <span>Soluções</span>
+              <ChevronDown size={16} />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent className="bg-white border shadow-lg">
+              <DropdownMenuItem asChild>
+                <Link to="/solucoes/cadastramento-eleitoral" className="text-gray-800 hover:text-boltz-purple transition-colors">
+                  Cadastramento Eleitoral | TSE
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/solucoes/instituicoes-financeiras" className="text-gray-800 hover:text-boltz-purple transition-colors">
+                  Instituições Financeiras | Banco do Brasil
+                </Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <Link to="/solucoes/controle-fronteiras" className="text-gray-800 hover:text-boltz-purple transition-colors">
+                  Controle de Fronteiras | Polícia Federal
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
           <Link to="/quem-somos" className="text-white hover:text-boltz-purple transition-colors">
             Quem Somos
           </Link>
