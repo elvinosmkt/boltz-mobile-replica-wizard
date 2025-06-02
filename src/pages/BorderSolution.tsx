@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/Button';
@@ -11,7 +10,7 @@ const BorderSolution = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-gradient-to-b from-blue-900/50 to-black">
+      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/b645fe92-0b22-486c-ab9d-b8156452a0ea.png)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
@@ -68,12 +67,11 @@ const BorderSolution = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-gradient-to-r from-purple-600 to-blue-600">
+      <section className="relative py-32 px-5 lg:py-40 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/70fc6161-48f3-4330-be24-855b644eaa4a.png)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
           <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
-            Saiba como podemos otimizar seus processos<br />
-            com soluções inovadoras
+            Transforme seus processos com segurança
           </h2>
           <Link to="/contato">
             <Button className="mx-auto">Fale conosco</Button>
