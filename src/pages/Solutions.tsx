@@ -11,7 +11,7 @@ const Solutions = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-gradient-to-b from-purple-900/50 to-black">
+      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/e625b5bd-15a9-4732-8d2e-a00d5d3bbe87.png)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
@@ -27,53 +27,50 @@ const Solutions = () => {
       {/* Technology Section */}
       <section className="bg-white py-16 px-5 lg:py-24">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="mb-12">
             <h2 className="text-boltz-purple font-bold text-2xl mb-4 lg:text-4xl">
               Tecnologia a Serviço da Identificação
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Identificação Biométrica por Chip</h3>
-              <p className="text-gray-600 text-sm">
-                Desenvolvemos soluções biométricas baseadas em chips de alta tecnologia para garantir precisão e confiabilidade em cada identificação.
-              </p>
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-black font-bold text-lg mb-3">Cadastro Civil e Emissão de Documentos:</h3>
+                <p className="text-gray-600 text-sm">
+                  Sistemas biométricos para emissão de documentos oficiais, garantindo segurança e autenticidade.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-black font-bold text-lg mb-3">Identificação Biométrica Pós-Óbito:</h3>
+                <p className="text-gray-600 text-sm">
+                  Tecnologia para identificação precisa e confiável de indivíduos falecidos, facilitando a emissão do Laudo Médico do Atestado de Óbito.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-black font-bold text-lg mb-3">Soluções Biométricas para Tribunais:</h3>
+                <p className="text-gray-600 text-sm">
+                  Autenticação digital segura para processos legais, controle de acesso e gestão eficiente de funcionários.
+                </p>
+              </div>
             </div>
 
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Instituições Financeiras por Chip</h3>
-              <p className="text-gray-600 text-sm">
-                Soluções específicas para o setor bancário, garantindo segurança máxima em transações e identificação de clientes.
-              </p>
-            </div>
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-black font-bold text-lg mb-3">Instituições Financeiras:</h3>
+                <p className="text-gray-600 text-sm">
+                  Soluções avançadas para autenticação e segurança no atendimento presencial e digital de bancos e empresas privadas.
+                </p>
+              </div>
 
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Controle de Fronteiras para Tribunais</h3>
-              <p className="text-gray-600 text-sm">
-                Tecnologia avançada para controle de acesso e identificação em fronteiras e tribunais, garantindo segurança nacional.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">e-Criminal</h3>
-              <p className="text-gray-600 text-sm">
-                Sistema integrado para identificação criminal, proporcionando agilidade e precisão no processo investigativo.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">e-Civil</h3>
-              <p className="text-gray-600 text-sm">
-                Soluções para identificação civil, facilitando processos administrativos e garantindo autenticidade documental.
-              </p>
-            </div>
-
-            <div className="text-center">
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Leitores MultiModais</h3>
-              <p className="text-gray-600 text-sm">
-                Equipamentos capazes de ler múltiplas modalidades biométricas, oferecendo flexibilidade e precisão.
-              </p>
+              <div>
+                <h3 className="text-black font-bold text-lg mb-3">Sistema Penitenciário e Criminal:</h3>
+                <p className="text-gray-600 text-sm">
+                  Controle de identidade de internos e tecnologia para operações policiais, tanto em campo quanto em instalações fixas.
+                </p>
+              </div>
             </div>
           </div>
         </div>
