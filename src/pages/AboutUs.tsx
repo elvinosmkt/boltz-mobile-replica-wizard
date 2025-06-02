@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/Button';
@@ -10,8 +11,14 @@ const AboutUs = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-gradient-to-b from-purple-900/50 to-black">
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <section className="relative min-h-screen flex items-center justify-center px-5">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/c80b2127-27ae-4e9e-aed2-56633043713a.png')`
+          }}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
             Quem somos
@@ -144,7 +151,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* CEO Section - Updated */}
+      {/* CEO Section */}
       <section className="bg-white py-16 px-5 lg:py-24">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
@@ -164,23 +171,13 @@ const AboutUs = () => {
             
             <div className="text-gray-600">
               <p className="mb-4">
-                Ismael Akiyama é o fundador e CEO do Grupo Akiyama, 
-                um ecossistema de empresas especializadas em 
-                tecnologia, business intelligence e soluções para o 
-                setor público. Nascinso, formou-se na Akiyama IQ.
+                Ismael Akiyama é um visionário empresário brasileiro com mais de 20 anos de experiência no setor de tecnologia. Fundador e CEO do Grupo Akiyama, ele lidera um ecossistema de empresas especializadas em soluções biométricas, business intelligence e tecnologia para o setor público.
               </p>
               <p className="mb-4">
-                Com visão estratégica e foco em inovação ele 
-                desenvolveu soluções que transformaram processos 
-                para reconhecimento, autenticação e gestão de 
-                identidades.
+                Com formação em Engenharia e uma visão estratégica aguçada, Ismael desenvolveu soluções inovadoras que transformaram os processos de reconhecimento, autenticação e gestão de identidades no Brasil. Sob sua liderança, o Grupo Akiyama se tornou referência nacional em identificação biométrica.
               </p>
               <p>
-                Atualmente lidera o grupo na consolidação como 
-                referência no setor, fornecendo soluções para governos, 
-                instituições financeiras e diversas outras áreas que 
-                necessitam de segurança de dados e identificação de 
-                pessoas.
+                Atualmente, ele conduz a expansão e consolidação do grupo como a principal referência do setor, fornecendo soluções para governos, instituições financeiras e diversas outras áreas que necessitam de segurança de dados e identificação precisa de pessoas.
               </p>
             </div>
           </div>
@@ -225,26 +222,38 @@ const AboutUs = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="h-48 bg-red-600"></div>
+              <img 
+                src="/lovable-uploads/04c9e991-a6e6-40c4-a458-3778de9eccfd.png" 
+                alt="TSE adquire Kits para implementar biometria" 
+                className="w-full h-48 object-cover"
+              />
               <div className="p-4">
-                <h3 className="text-black font-bold text-sm mb-2">Technology News</h3>
-                <p className="text-gray-600 text-xs">Latest updates from the biometric industry...</p>
+                <h3 className="text-black font-bold text-sm mb-2">TSE adquire Kits para implementar biometria em todo o país.</h3>
+                <p className="text-gray-600 text-xs">Por meio de contrato assinado com a empresa Akiyama Indústria e Comércio de Equipamentos Eletrônicos e Sistemas Ltda., vencedora de licitação, o TSE adquiriu mais 2.550 Kits Biométricos.</p>
               </div>
             </div>
 
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="h-48 bg-yellow-600"></div>
+              <img 
+                src="/lovable-uploads/553bac2e-ddd4-42fe-983c-1cce10ffffaf.png" 
+                alt="Biometrics digital ID companies" 
+                className="w-full h-48 object-cover"
+              />
               <div className="p-4">
-                <h3 className="text-black font-bold text-sm mb-2">Innovation Alert</h3>
-                <p className="text-gray-600 text-xs">New developments in digital identification...</p>
+                <h3 className="text-black font-bold text-sm mb-2">Biometrics, digital ID companies make strong showing at ID4Africa 2022.</h3>
+                <p className="text-gray-600 text-xs">The Vero Match biometric capture solution from Akiyama, featuring Integrated Biometrics' Five-O fingerprint scanner, was launched at ID4Africa 2022 to expand on the portable solution first developed for Brazilian police in 2018 with Kojak scanners.</p>
               </div>
             </div>
 
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <div className="h-48 bg-green-600"></div>
+              <img 
+                src="/lovable-uploads/9a6c21f1-93b7-4abb-8b00-049e3d3352c9.png" 
+                alt="Integrated Biometrics partner Akiyama" 
+                className="w-full h-48 object-cover"
+              />
               <div className="p-4">
-                <h3 className="text-black font-bold text-sm mb-2">Success Stories</h3>
-                <p className="text-gray-600 text-xs">Our latest implementations and achievements...</p>
+                <h3 className="text-black font-bold text-sm mb-2">Integrated Biometrics partner Akiyama wins Brazil Federal Police contract.</h3>
+                <p className="text-gray-600 text-xs">The Federal Police of Brazil has purchased 1,500 fingerprint scanners made by Integrated Biometrics for a recent bid. The order for the mobile scanners was fulfilled by Akiyama, the exclusive distributor for Integrated Biometrics hardware in Brazil.</p>
               </div>
             </div>
           </div>
@@ -252,8 +261,14 @@ const AboutUs = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-gradient-to-r from-purple-600 to-blue-600">
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <section className="relative py-32 px-5 lg:py-40">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/lovable-uploads/0f050324-4d75-42e2-a936-f652a4477c2b.png')`
+          }}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
           <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
             Transformamos tecnologia em segurança
