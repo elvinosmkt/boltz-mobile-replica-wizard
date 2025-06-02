@@ -84,22 +84,25 @@ const Solutions = () => {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-bold text-lg mb-2">Tecnologia de ponta</h3>
-              <p className="text-gray-600 text-sm">Utilizamos as mais avançadas tecnologias do mercado</p>
+            <div className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/d538d6ce-daba-45a0-a20c-452827a2416d.png)'}}>
+              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div className="relative z-10 p-6 h-full flex flex-col justify-end">
+                <h3 className="text-white font-bold text-lg mb-2">Tecnologia proprietária</h3>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-500 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-bold text-lg mb-2">Precisão e segurança</h3>
-              <p className="text-gray-600 text-sm">Garantimos alta precisão em todos os processos</p>
+            <div className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/9f746c55-c2c2-4b08-bb67-4488b8c2a10e.png)'}}>
+              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div className="relative z-10 p-6 h-full flex flex-col justify-end">
+                <h3 className="text-white font-bold text-lg mb-2">Presença nacional</h3>
+              </div>
             </div>
 
-            <div className="bg-white p-6 rounded-lg text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg mx-auto mb-4"></div>
-              <h3 className="font-bold text-lg mb-2">Proteção de segurança</h3>
-              <p className="text-gray-600 text-sm">Máxima proteção de dados e informações</p>
+            <div className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/b55c47c3-0333-4c4c-b20c-14b0ce30daed.png)'}}>
+              <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+              <div className="relative z-10 p-6 h-full flex flex-col justify-end">
+                <h3 className="text-white font-bold text-lg mb-2">Precisão e segurança</h3>
+              </div>
             </div>
           </div>
         </div>
