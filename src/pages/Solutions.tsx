@@ -159,7 +159,7 @@ const Solutions = () => {
       </section>
 
       {/* Final CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-gradient-to-r from-purple-600 to-blue-600">
+      <section className="relative py-32 px-5 lg:py-40 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/70fc6161-48f3-4330-be24-855b644eaa4a.png)'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
           <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
