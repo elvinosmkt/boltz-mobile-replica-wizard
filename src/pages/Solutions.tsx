@@ -117,34 +117,40 @@ const Solutions = () => {
 
           <div className="space-y-8">
             <Link to="/solucoes/cadastramento-eleitoral" className="block">
-              <div className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/65559614-7006-4dba-8288-66c5eabf2977.png)'}}>
+              <div className="relative rounded-lg overflow-hidden h-80 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/0ef50083-4702-430b-9cee-ff65b056dffb.png)'}}>
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                  <h3 className="text-white font-bold text-xl mb-2">Solução para Cadastramento Eleitoral | TSE</h3>
-                  <p className="text-gray-300 text-sm mb-4">Mais de 20 mil kits biométricos distribuídos em todo o território nacional para cadastramento eleitoral.</p>
-                  <Button variant="primary" className="w-fit">Saiba mais</Button>
-                </div>
-              </div>
-            </Link>
-
-            <Link to="/solucoes/instituicoes-financeiras" className="block">
-              <div className="relative rounded-lg overflow-hidden h-64 bg-blue-600">
-                <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                  <h3 className="text-white font-bold text-xl mb-2">Solução para Instituições Financeiras | Banco do Brasil</h3>
-                  <p className="text-gray-300 text-sm mb-4">Tecnologia biométrica para segurança bancária e identificação de clientes.</p>
-                  <Button variant="primary" className="w-fit">Saiba mais</Button>
+                <div className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center">
+                  <h3 className="text-white font-bold text-2xl mb-4 lg:text-3xl">Solução para Cadastramento Eleitoral | TSE</h3>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Maior parque de cadastramento biométrico do mundo.</p>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Fornecendo tecnologia para o TSE desde 2008.</p>
+                  <p className="text-gray-300 text-base mb-6 max-w-2xl">Mais de 25 mil kits de cadastramento biométrico entregues.</p>
+                  <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
                 </div>
               </div>
             </Link>
 
             <Link to="/solucoes/controle-fronteiras" className="block">
-              <div className="relative rounded-lg overflow-hidden h-64 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/f28d5639-f76a-440c-9bbf-658384e67857.png)'}}>
+              <div className="relative rounded-lg overflow-hidden h-80 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/11dc74b0-c29e-4cdb-91ae-661240eff951.png)'}}>
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-                <div className="relative z-10 p-8 h-full flex flex-col justify-end">
-                  <h3 className="text-white font-bold text-xl mb-2">Controle de Fronteiras | Polícia Federal</h3>
-                  <p className="text-gray-300 text-sm mb-4">Mais de 950 soluções operando no controle de fronteiras do Brasil.</p>
-                  <Button variant="primary" className="w-fit">Saiba mais</Button>
+                <div className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center">
+                  <h3 className="text-white font-bold text-2xl mb-4 lg:text-3xl">Controle de Fronteiras | Polícia Federal</h3>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Tecnologia avançada para segurança nas fronteiras.</p>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Sistemas biométricos em pontos estratégicos.</p>
+                  <p className="text-gray-300 text-base mb-6 max-w-2xl">Mais de 950 soluções operando no controle de fronteiras do Brasil.</p>
+                  <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                </div>
+              </div>
+            </Link>
+
+            <Link to="/solucoes/instituicoes-financeiras" className="block">
+              <div className="relative rounded-lg overflow-hidden h-80 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/b5d86670-783b-477d-b178-5b2d89b11327.png)'}}>
+                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+                <div className="relative z-10 p-8 h-full flex flex-col justify-center items-center text-center">
+                  <h3 className="text-white font-bold text-2xl mb-4 lg:text-3xl">Solução para Instituições Financeiras | Banco do Brasil</h3>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Tecnologia biométrica para segurança bancária.</p>
+                  <p className="text-gray-300 text-base mb-4 max-w-2xl">Identificação precisa e confiável de clientes.</p>
+                  <p className="text-gray-300 text-base mb-6 max-w-2xl">Soluções implementadas em agências em todo o país.</p>
+                  <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
                 </div>
               </div>
             </Link>
