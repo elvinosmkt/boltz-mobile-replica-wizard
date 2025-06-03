@@ -35,13 +35,13 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-black font-objective">
+    <div className="min-h-screen bg-black text-white font-objective">
       <NavBar />
 
       {/* Header Section */}
       <section className="pt-32 pb-16 px-5">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-8 lg:text-6xl">
+          <h1 className="text-4xl font-bold mb-8 lg:text-6xl text-white">
             Fale conosco
           </h1>
         </div>
@@ -50,9 +50,20 @@ const Contact = () => {
       {/* Contact Form */}
       <section className="pb-16 px-5">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-black rounded-lg p-8 relative overflow-hidden">
-            {/* Purple gradient background */}
-            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-600 to-transparent opacity-80"></div>
+          <div className="bg-black rounded-lg p-8 relative overflow-hidden border border-gray-800">
+            {/* Background image */}
+            <div 
+              className="absolute inset-0 opacity-30"
+              style={{
+                backgroundImage: 'url(/lovable-uploads/5ec49cea-c136-42d6-9491-002adccbeaab.png)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            ></div>
+            
+            {/* Purple gradient overlay */}
+            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-purple-600 to-transparent opacity-60"></div>
             
             <form onSubmit={handleSubmit} className="relative z-10">
               {/* Company Type */}
@@ -96,7 +107,7 @@ const Contact = () => {
                       name="nome"
                       value={formData.nome}
                       onChange={handleInputChange}
-                      className="bg-white border-none"
+                      className="bg-white border-none text-black"
                       required
                     />
                   </div>
@@ -107,7 +118,7 @@ const Contact = () => {
                       name="sobrenome"
                       value={formData.sobrenome}
                       onChange={handleInputChange}
-                      className="bg-white border-none"
+                      className="bg-white border-none text-black"
                       required
                     />
                   </div>
@@ -120,7 +131,7 @@ const Contact = () => {
                     name="empresa"
                     value={formData.empresa}
                     onChange={handleInputChange}
-                    className="bg-white border-none"
+                    className="bg-white border-none text-black"
                     required
                   />
                 </div>
@@ -133,7 +144,7 @@ const Contact = () => {
                     type="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-white border-none"
+                    className="bg-white border-none text-black"
                     required
                   />
                 </div>
@@ -146,7 +157,7 @@ const Contact = () => {
                       name="telefone"
                       value={formData.telefone}
                       onChange={handleInputChange}
-                      className="bg-white border-none"
+                      className="bg-white border-none text-black"
                       required
                     />
                   </div>
@@ -157,7 +168,7 @@ const Contact = () => {
                       name="estado"
                       value={formData.estado}
                       onChange={handleInputChange}
-                      className="bg-white border-none"
+                      className="bg-white border-none text-black"
                       required
                     />
                   </div>
@@ -171,7 +182,7 @@ const Contact = () => {
                     value={formData.mensagem}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full p-3 rounded-md border-none resize-none"
+                    className="w-full p-3 rounded-md border-none resize-none text-black"
                     required
                   />
                 </div>
