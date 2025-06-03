@@ -77,7 +77,7 @@ const Contact = () => {
                       value="private"
                       checked={formData.companyType === 'private'}
                       onChange={handleInputChange}
-                      className="mr-2 w-4 h-4 text-boltz-purple"
+                      className="mr-2 w-4 h-4 text-[#7918f9]"
                     />
                     Setor Privado
                   </label>
@@ -88,7 +88,7 @@ const Contact = () => {
                       value="public"
                       checked={formData.companyType === 'public'}
                       onChange={handleInputChange}
-                      className="mr-2 w-4 h-4 text-boltz-purple"
+                      className="mr-2 w-4 h-4 text-[#7918f9]"
                     />
                     Setor Público/Governo
                   </label>
@@ -199,7 +199,7 @@ const Contact = () => {
                       value="email"
                       checked={formData.contactPreference === 'email'}
                       onChange={handleInputChange}
-                      className="mr-2 w-4 h-4 text-boltz-purple"
+                      className="mr-2 w-4 h-4 text-[#7918f9]"
                     />
                     Email
                   </label>
@@ -210,7 +210,7 @@ const Contact = () => {
                       value="whatsapp"
                       checked={formData.contactPreference === 'whatsapp'}
                       onChange={handleInputChange}
-                      className="mr-2 w-4 h-4 text-boltz-purple"
+                      className="mr-2 w-4 h-4 text-[#7918f9]"
                     />
                     WhatsApp
                   </label>
@@ -221,7 +221,7 @@ const Contact = () => {
                       value="phone"
                       checked={formData.contactPreference === 'phone'}
                       onChange={handleInputChange}
-                      className="mr-2 w-4 h-4 text-boltz-purple"
+                      className="mr-2 w-4 h-4 text-[#7918f9]"
                     />
                     Ligação
                   </label>
@@ -236,16 +236,19 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-gradient-to-r from-purple-600 to-blue-600">
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-        <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
-            Transformamos tecnologia em segurança
-          </h2>
-          <Button className="mx-auto">Fale conosco</Button>
-        </div>
-      </section>
+     <section
+             className="relative py-32 px-5 lg:py-40 bg-cover bg-center bg-no-repeat"
+             style={{
+               backgroundImage: 'url(/lovable-uploads/98097686-c442-4f38-9425-abe923adb251.png)'
+             }}
+           >
+             <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
+               <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
+                 Transformamos tecnologia em segurança
+               </h2>
+               <Button className="mx-auto">Fale conosco</Button>
+             </div>
+           </section>
 
       {/* Footer */}
       <footer className="bg-black text-white py-10 px-5 border-t border-gray-800 lg:py-16">

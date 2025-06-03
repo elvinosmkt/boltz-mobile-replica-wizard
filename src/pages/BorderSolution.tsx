@@ -10,7 +10,7 @@ const BorderSolution = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/b645fe92-0b22-486c-ab9d-b8156452a0ea.png)'}}>
+      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{ backgroundImage: 'url(/Bg_pag PF_Mobile.png)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
@@ -31,7 +31,7 @@ const BorderSolution = () => {
             RealPass<br />
             <span className="text-lg lg:text-xl font-normal">Leitor de Documentos</span>
           </h2>
-          
+
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
             O RealPass é um dispositivo inovador de leitura de documentos, programado para detectar múltiplas marcas de captura em diferentes comprimentos de onda validado, de e.UL garantindo uma solução confiável e precisa para o processamento e a autenticação de documentos.
           </p>
@@ -42,23 +42,23 @@ const BorderSolution = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-gray-100 rounded-lg p-6">
-              <img 
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png" 
-                alt="RealPass Device 1" 
+              <img
+                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
+                alt="RealPass Device 1"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
             </div>
             <div className="bg-gray-100 rounded-lg p-6">
-              <img 
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png" 
-                alt="RealPass Device 2" 
+              <img
+                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
+                alt="RealPass Device 2"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
             </div>
             <div className="bg-gray-100 rounded-lg p-6">
-              <img 
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png" 
-                alt="RealPass Device 3" 
+              <img
+                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
+                alt="RealPass Device 3"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
             </div>
@@ -67,15 +67,17 @@ const BorderSolution = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/70fc6161-48f3-4330-be24-855b644eaa4a.png)'}}>
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+      <section
+        className="relative py-32 px-5 lg:py-40 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/98097686-c442-4f38-9425-abe923adb251.png)'
+        }}
+      >
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
-            Transforme seus processos com segurança
+          <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
+            Transformamos tecnologia em segurança
           </h2>
-          <Link to="/contato">
-            <Button className="mx-auto">Fale conosco</Button>
-          </Link>
+          <Button className="mx-auto">Fale conosco</Button>
         </div>
       </section>
 
@@ -86,7 +88,7 @@ const BorderSolution = () => {
             <div className="lg:col-span-1">
               <Logo className="mb-8" />
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Soluções</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -95,7 +97,7 @@ const BorderSolution = () => {
                 <li><Link to="/solucoes/controle-fronteiras" className="hover:text-white">Controle de Fronteiras | Polícia Federal</Link></li>
               </ul>
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Quem Somos</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -103,7 +105,7 @@ const BorderSolution = () => {
                 <li>Carreira</li>
               </ul>
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Contato</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -111,7 +113,7 @@ const BorderSolution = () => {
               </ul>
             </div>
           </div>
-          
+
           <div className="mt-8 text-xs text-gray-500 lg:text-center lg:mt-12 lg:pt-8 lg:border-t lg:border-gray-800">
             <Link to="/privacidade" className="hover:text-white">Termos e Política</Link>
             <span className="mx-4">|</span>

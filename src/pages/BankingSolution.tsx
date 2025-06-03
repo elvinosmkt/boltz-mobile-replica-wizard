@@ -11,7 +11,7 @@ const BankingSolution = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/d266d697-4ad9-43a9-8372-20195f1e014a.png)'}}>
+      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/Bg_pag BB_Mobile.png)' }}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
@@ -31,24 +31,24 @@ const BankingSolution = () => {
           <h2 className="text-black font-bold text-2xl mb-6 lg:text-4xl text-center">
             Leitores Lumidigm
           </h2>
-          
+
           <p className="text-gray-600 mb-12 text-center max-w-2xl mx-auto">
-            Equipamento baseado em sistema 
+            Equipamento baseado em sistema
             multimodal para multiples
-            campanha de leituras Lumidigm de 
-            alta performance utilizando técnica 
+            campanha de leituras Lumidigm de
+            alta performance utilizando técnica
             de tecnologia espectral.
           </p>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
             <div>
-              <h3 className="text-black font-bold text-xl mb-4">A tecnologia multispectral 
-              permite que se obtenha dos diferentes 
-              camadas da pele uma informação 
-              segmentando imagens de digital 
-              otimizado à fingerprint para 
-              detectar e anular todos os tipos 
-              de fraude.</h3>
+              <h3 className="text-black font-bold text-xl mb-4">A tecnologia multispectral
+                permite que se obtenha dos diferentes
+                camadas da pele uma informação
+                segmentando imagens de digital
+                otimizado à fingerprint para
+                detectar e anular todos os tipos
+                de fraude.</h3>
             </div>
             <div>
               {/* Placeholder for description */}
@@ -57,18 +57,18 @@ const BankingSolution = () => {
 
           <div className="grid md:grid-cols-2 gap-8 text-center">
             <div className="bg-gray-100 rounded-lg p-6">
-              <img 
-                src="/lovable-uploads/a89ab407-408d-4675-b444-6f88fcd405c2.png" 
-                alt="Lumidigm M421" 
+              <img
+                src="/lovable-uploads/a89ab407-408d-4675-b444-6f88fcd405c2.png"
+                alt="Lumidigm M421"
                 className="w-48 h-48 object-contain mx-auto mb-4"
               />
               <h3 className="font-bold text-lg text-black">Lumidigm<br />M421</h3>
             </div>
-            
+
             <div className="bg-gray-100 rounded-lg p-6">
-              <img 
-                src="/lovable-uploads/72ea4390-0913-41a4-b804-d0bd5b0e2734.png" 
-                alt="Lumidigm V521" 
+              <img
+                src="/lovable-uploads/72ea4390-0913-41a4-b804-d0bd5b0e2734.png"
+                alt="Lumidigm V521"
                 className="w-48 h-48 object-contain mx-auto mb-4"
               />
               <h3 className="font-bold text-lg text-black">Lumidigm<br />V521</h3>
@@ -87,9 +87,9 @@ const BankingSolution = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/95238033-e822-44a8-b2c0-9f2b90e565ea.png" 
-                  alt="Funções de segurança" 
+                <img
+                  src="/lovable-uploads/95238033-e822-44a8-b2c0-9f2b90e565ea.png"
+                  alt="Funções de segurança"
                   className="w-8 h-8"
                 />
               </div>
@@ -98,9 +98,9 @@ const BankingSolution = () => {
 
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/f7f48f03-dffa-4003-8312-42f51e9d3e6a.png" 
-                  alt="Operações autônomas" 
+                <img
+                  src="/lovable-uploads/f7f48f03-dffa-4003-8312-42f51e9d3e6a.png"
+                  alt="Operações autônomas"
                   className="w-8 h-8"
                 />
               </div>
@@ -109,9 +109,9 @@ const BankingSolution = () => {
 
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/60862ae3-255d-4442-803e-3e74713a80d6.png" 
-                  alt="Sistema tamper-proof" 
+                <img
+                  src="/lovable-uploads/60862ae3-255d-4442-803e-3e74713a80d6.png"
+                  alt="Sistema tamper-proof"
                   className="w-8 h-8"
                 />
               </div>
@@ -120,9 +120,9 @@ const BankingSolution = () => {
 
             <div className="text-center">
               <div className="w-20 h-20 bg-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <img 
-                  src="/lovable-uploads/77339e0f-c64b-473a-a90a-84f940bdcc33.png" 
-                  alt="Criptografia embarcada" 
+                <img
+                  src="/lovable-uploads/77339e0f-c64b-473a-a90a-84f940bdcc33.png"
+                  alt="Criptografia embarcada"
                   className="w-8 h-8"
                 />
               </div>
@@ -138,11 +138,11 @@ const BankingSolution = () => {
           <h2 className="text-white font-bold text-2xl mb-8 lg:text-4xl">
             OpenBio de Norte a Sul
           </h2>
-          
+
           <div className="relative">
-            <img 
-              src="/lovable-uploads/a540c9ef-d2b3-45ae-8a3a-6fd56f475186.png" 
-              alt="Mapa do Brasil mostrando cobertura nacional" 
+            <img
+              src="/lovable-uploads/a540c9ef-d2b3-45ae-8a3a-6fd56f475186.png"
+              alt="Mapa do Brasil mostrando cobertura nacional"
               className="w-full max-w-md mx-auto rounded-lg"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -153,12 +153,12 @@ const BankingSolution = () => {
               </div>
             </div>
           </div>
-          
+
           <p className="text-gray-300 mt-8 max-w-2xl mx-auto">
-            Estamos em <strong>todos os estados brasileiros</strong>, levando 
-            tecnologia biométrica com precisão e confiabilidade. 
-            Nossa presença reflete o comprometimento em atender 
-            ao mercado nacional, garantindo que as soluções estejam 
+            Estamos em <strong>todos os estados brasileiros</strong>, levando
+            tecnologia biométrica com precisão e confiabilidade.
+            Nossa presença reflete o comprometimento em atender
+            ao mercado nacional, garantindo que as soluções estejam
             pessoas e garantem segurança onde for necessário.
           </p>
         </div>
@@ -175,7 +175,7 @@ const BankingSolution = () => {
               <span className="text-white text-sm">→</span>
             </div>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-100 rounded-lg p-6">
               <div className="w-full h-32 bg-gray-200 rounded mb-4"></div>
@@ -185,7 +185,7 @@ const BankingSolution = () => {
               </p>
               <span className="text-purple-600 text-xs">Há 2 dias</span>
             </div>
-            
+
             <div className="bg-gray-100 rounded-lg p-6">
               <div className="w-full h-32 bg-gray-200 rounded mb-4"></div>
               <h3 className="font-bold text-lg text-black mb-2">Parceria Banco do Brasil</h3>
@@ -194,7 +194,7 @@ const BankingSolution = () => {
               </p>
               <span className="text-purple-600 text-xs">Há 1 semana</span>
             </div>
-            
+
             <div className="bg-gray-100 rounded-lg p-6">
               <div className="w-full h-32 bg-gray-200 rounded mb-4"></div>
               <h3 className="font-bold text-lg text-black mb-2">Reconhecimento TSE</h3>
@@ -207,17 +207,19 @@ const BankingSolution = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-32 px-5 lg:py-40 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/70fc6161-48f3-4330-be24-855b644eaa4a.png)'}}>
-        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+
+      <section
+        className="relative py-32 px-5 lg:py-40 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/lovable-uploads/98097686-c442-4f38-9425-abe923adb251.png)'
+        }}
+      >
         <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-white font-bold text-2xl mb-6 lg:text-4xl lg:mb-12">
+          <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
             Descubra como podemos elevar a segurança<br />
             e a confiabilidade dos serviços bancários
           </h2>
-          <Link to="/contato">
-            <Button className="mx-auto">Fale conosco</Button>
-          </Link>
+          <Button className="mx-auto">Fale conosco</Button>
         </div>
       </section>
 
@@ -228,7 +230,7 @@ const BankingSolution = () => {
             <div className="lg:col-span-1">
               <Logo className="mb-8" />
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Soluções</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -237,7 +239,7 @@ const BankingSolution = () => {
                 <li><Link to="/solucoes/controle-fronteiras" className="hover:text-white">Controle de Fronteiras | Polícia Federal</Link></li>
               </ul>
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Quem Somos</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -245,7 +247,7 @@ const BankingSolution = () => {
                 <li>Carreira</li>
               </ul>
             </div>
-            
+
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Contato</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -253,7 +255,7 @@ const BankingSolution = () => {
               </ul>
             </div>
           </div>
-          
+
           <div className="mt-8 text-xs text-gray-500 lg:text-center lg:mt-12 lg:pt-8 lg:border-t lg:border-gray-800">
             <Link to="/privacidade" className="hover:text-white">Termos e Política</Link>
             <span className="mx-4">|</span>

@@ -16,11 +16,11 @@ export const Button = ({
   variant = 'primary',
   type = 'button'
 }: ButtonProps) => {
-  const baseClasses = "px-4 py-2 rounded-full font-medium text-sm";
+  const baseClasses = "px-6 py-1 pt-2 2xl:py-3 2xl:pt-4 rounded-full font-regular text-lg 2xl:text-xl font-objective";
   
   const variantClasses = {
-    primary: "bg-boltz-purple text-white hover:bg-boltz-dark-purple",
-    outline: "bg-transparent border border-boltz-purple text-boltz-purple hover:bg-boltz-purple/10",
+    primary: "bg-[#7918f9] text-white hover:bg-boltz-dark-purple",
+    outline: "bg-transparent border border-[#7918f9] text-[#7918f9] hover:bg-[#7918f9]/10",
   };
   
   return (

@@ -32,7 +32,7 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             <div>
               <button 
                 onClick={() => setShowSolutions(!showSolutions)}
-                className="flex items-center justify-between w-full text-lg text-gray-800 hover:text-boltz-purple transition-colors"
+                className="flex items-center justify-between w-full text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
               >
                 Soluções
                 {showSolutions ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
@@ -41,21 +41,21 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 <div className="ml-4 mt-3 space-y-3">
                   <Link 
                     to="/solucoes/cadastramento-eleitoral" 
-                    className="block text-md text-gray-600 hover:text-boltz-purple transition-colors"
+                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
                     onClick={onClose}
                   >
                     Cadastramento Eleitoral | TSE
                   </Link>
                   <Link 
                     to="/solucoes/instituicoes-financeiras" 
-                    className="block text-md text-gray-600 hover:text-boltz-purple transition-colors"
+                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
                     onClick={onClose}
                   >
                     Instituições Financeiras | Banco do Brasil
                   </Link>
                   <Link 
                     to="/solucoes/controle-fronteiras" 
-                    className="block text-md text-gray-600 hover:text-boltz-purple transition-colors"
+                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
                     onClick={onClose}
                   >
                     Controle de Fronteiras | Polícia Federal
@@ -65,21 +65,21 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             </div>
             <Link 
               to="/quem-somos" 
-              className="block text-lg text-gray-800 hover:text-boltz-purple transition-colors"
+              className="block text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
               onClick={onClose}
             >
               Quem Somos
             </Link>
             <Link 
               to="#" 
-              className="block text-lg text-gray-800 hover:text-boltz-purple transition-colors"
+              className="block text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
               onClick={onClose}
             >
               Notícias
             </Link>
             <Link 
               to="/contato" 
-              className="block text-lg text-gray-800 hover:text-boltz-purple transition-colors"
+              className="block text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
               onClick={onClose}
             >
               Contato
