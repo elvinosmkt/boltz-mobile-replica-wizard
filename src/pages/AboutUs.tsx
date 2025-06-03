@@ -10,8 +10,8 @@ const AboutUs = () => {
     <div className="min-h-screen bg-black text-white font-objective">
       <NavBar />
 
-      {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5">
+      {/* Hero Section with Company Info */}
+      <section className="relative min-h-screen flex flex-col justify-center px-5 py-32">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -19,44 +19,44 @@ const AboutUs = () => {
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
-            Quem somos
-          </h1>
-          <p className="text-lg mb-8 lg:text-xl max-w-2xl mx-auto">
-            Criamos tecnologia Open BIO Advanced na OpenBio que acredita em uma visão dos soluções de identificação biométrica, assegurando a identidade única & inovadora.
-          </p>
-        </div>
-      </section>
+        
+        <div className="relative z-10 max-w-6xl mx-auto">
+          {/* Hero Title */}
+          <div className="text-center mb-16 lg:mb-24">
+            <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
+              Quem somos
+            </h1>
+            <p className="text-lg mb-8 lg:text-xl max-w-2xl mx-auto">
+              Criamos tecnologia Open BIO Advanced na OpenBio que acredita em uma visão dos soluções de identificação biométrica, assegurando a identidade única & inovadora.
+            </p>
+          </div>
 
-      {/* Company Info Grid */}
-      <section className="bg-black py-16 px-5 lg:py-24">
-        <div className="max-w-6xl mx-auto">
+          {/* Company Info Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             <div>
               <h3 className="text-boltz-purple font-bold text-lg mb-3">A empresa é uma referência</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 20 anos de experiência em soluções biométricas e identificação digital de alta tecnologia.
               </p>
             </div>
 
             <div>
               <h3 className="text-boltz-purple font-bold text-lg mb-3">Estamos criados o primeiro</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Sistema integrado de identificação biométrica para instituições governamentais e privadas.
               </p>
             </div>
 
             <div>
               <h3 className="text-boltz-purple font-bold text-lg mb-3">Somente, conseguimos por</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Nossa dedicação em oferecer soluções inovadoras e confiáveis para nossos clientes.
               </p>
             </div>
 
             <div>
               <h3 className="text-boltz-purple font-bold text-lg mb-3">Em OpenBio, transformamos</h3>
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-300 text-sm">
                 Tecnologia em soluções práticas que garantem segurança e eficiência nos processos.
               </p>
             </div>
