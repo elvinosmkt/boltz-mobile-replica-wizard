@@ -4,65 +4,116 @@ import { Button } from '@/components/Button';
 import { Logo } from '@/components/Logo';
 import { Link } from 'react-router-dom';
 
-const BorderSolution = () => {
+const ElectoralSolution = () => {
   return (
     <div className="min-h-screen bg-black text-white font-objective">
       <NavBar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{ backgroundImage: 'url(/lovable-uploads/Bg_pag_PF_Mobile.png)', backgroundSize: 'cover',
+      <section className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" style={{backgroundImage: 'url(/lovable-uploads/Bg_pag_TSE_Mobile.png)',  backgroundSize: 'cover',
                 backgroundPosition: 'center bottom',
-                backgroundRepeat: 'no-repeat' }}>
+                backgroundRepeat: 'no-repeat'}}>
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
-            Solução para Controle de Fronteiras<br />
-            Polícia Federal
+            Solução para Cadastramento Eleitoral | TSE
           </h1>
           <p className="text-lg mb-8 lg:text-xl max-w-3xl mx-auto">
-            Ao contar com equipamentos biométricos baseados em chips de cadastramento biométrico que facilitam gerenciamento de dados e determinação de uma tecnologia avançada para coleta de dados de pessoas nas fronteiras. A solução otimizada pelos profissionais públicos e responsáveis por documentos da Investigação, políticas e em equipe diferentes em pontos fronteiriços do Brasil.
+            Para garantir a autenticidade cadastramento biométrico no Brasil. A OpenBio desenvolveu uma plataforma para aplicações com grande foco na captura do Tribunal Superior Eleitoral (TSE), desenvolvemos tecnologia essencial para a recadastramento de pessoas através do país.
           </p>
           <Button className="mt-4 lg:mt-6">Saiba mais</Button>
         </div>
       </section>
 
-      {/* RealPass Section */}
+      {/* Timeline Section */}
       <section className="bg-white py-16 px-5 lg:py-24">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-black font-bold text-2xl mb-6 lg:text-4xl">
-            RealPass<br />
-            <span className="text-lg lg:text-xl font-normal">Leitor de Documentos</span>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
+            Histórico do Projeto
           </h2>
 
-          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            O RealPass é um dispositivo inovador de leitura de documentos, programado para detectar múltiplas marcas de captura em diferentes comprimentos de onda validado, de e.UL garantindo uma solução confiável e precisa para o processamento e a autenticação de documentos.
+          <div className="space-y-12">
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold">📱</span>
+              </div>
+              <div>
+                <h3 className="text-purple-600 font-bold text-lg mb-2">2008 — Projeto Piloto</h3>
+                <p className="text-gray-600">
+                  Desta in fabis ele viverra. 3 municípios brasileiros participaram foram 60 mil eleitores recadastraram em mais de 60 kits foram entregues.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold">👤</span>
+              </div>
+              <div>
+                <h3 className="text-purple-600 font-bold text-lg mb-2">2009 a 2012 — Identificação do Eleitor</h3>
+                <p className="text-gray-600">
+                  Coletas realizadas em 330 municípios totalizando mais de 5 milhões de eleitores recadastrados. Mais de 2 mil kits foram entregues 2 mil kits.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-gray-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold">🔄</span>
+              </div>
+              <div>
+                <h3 className="text-gray-500 font-bold text-lg mb-2">2014 — Início do recadastramento dos eleitores</h3>
+                <p className="text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-6">
+              <div className="w-16 h-16 bg-gray-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                <span className="text-white font-bold">📊</span>
+              </div>
+              <div>
+                <h3 className="text-gray-500 font-bold text-lg mb-2">2015 a 2018 — Atualização do banco de dados</h3>
+                <p className="text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Products Section */}
+      <section className="bg-gray-100 py-16 px-5 lg:py-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-black font-bold text-2xl mb-12 lg:text-4xl text-center">
+            Produção de Produtos
+          </h2>
+          <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+            As soluções de biometria para TSE garantem total interoperabilidade, segurança e confiabilidade permitindo o cadastramento biométrico dos eleitores.
           </p>
 
-          <h3 className="text-black font-bold text-xl mb-8">
-            Segurança e inovação em um único dispositivo.
-          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-24 h-32 bg-gray-200 rounded mx-auto mb-4 flex items-center justify-center">
+                <span className="text-gray-500">📱</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Módulo Cenário Assento Fixo</h3>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <div className="bg-gray-100 rounded-lg p-6">
-              <img
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
-                alt="RealPass Device 1"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-24 h-32 bg-gray-200 rounded mx-auto mb-4 flex items-center justify-center">
+                <span className="text-gray-500">💻</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Conjunto Flash</h3>
             </div>
-            <div className="bg-gray-100 rounded-lg p-6">
-              <img
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
-                alt="RealPass Device 2"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
-            </div>
-            <div className="bg-gray-100 rounded-lg p-6">
-              <img
-                src="/lovable-uploads/99295093-15ac-4999-ae6c-2f1a27decb99.png"
-                alt="RealPass Device 3"
-                className="w-full h-48 object-cover rounded-lg mb-4"
-              />
+
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-24 h-32 bg-black rounded mx-auto mb-4 flex items-center justify-center">
+                <span className="text-white">📱</span>
+              </div>
+              <h3 className="font-bold text-lg mb-2">Akvecos</h3>
             </div>
           </div>
         </div>
@@ -70,18 +121,18 @@ const BorderSolution = () => {
 
       {/* CTA Section */}
       <section
-        className="relative py-32 px-5 lg:py-40 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(/lovable-uploads/98097686-c442-4f38-9425-abe923adb251.png)'
-        }}
-      >
-        <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
-          <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
-            Transformamos tecnologia em segurança
-          </h2>
-          <Button className="mx-auto">Fale conosco</Button>
-        </div>
-      </section>
+              className="relative py-32 px-5 lg:py-40 bg-cover bg-center bg-no-repeat"
+              style={{
+                backgroundImage: 'url(/lovable-uploads/98097686-c442-4f38-9425-abe923adb251.png)'
+              }}
+            >
+              <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
+                <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
+                  Transformamos tecnologia em segurança
+                </h2>
+                <Button className="mx-auto">Fale conosco</Button>
+              </div>
+            </section>
 
       {/* Footer */}
       <footer className="bg-black text-white py-10 px-5 border-t border-gray-800 lg:py-16">
@@ -90,7 +141,7 @@ const BorderSolution = () => {
             <div className="lg:col-span-1">
               <Logo className="mb-8" />
             </div>
-
+            
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Soluções</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -99,7 +150,7 @@ const BorderSolution = () => {
                 <li><Link to="/solucoes/controle-fronteiras" className="hover:text-white">Controle de Fronteiras | Polícia Federal</Link></li>
               </ul>
             </div>
-
+            
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Quem Somos</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -107,7 +158,7 @@ const BorderSolution = () => {
                 <li>Carreira</li>
               </ul>
             </div>
-
+            
             <div className="mb-8 lg:mb-0">
               <h3 className="font-bold mb-4 lg:text-lg">Contato</h3>
               <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
@@ -115,7 +166,7 @@ const BorderSolution = () => {
               </ul>
             </div>
           </div>
-
+          
           <div className="mt-8 text-xs text-gray-500 lg:text-center lg:mt-12 lg:pt-8 lg:border-t lg:border-gray-800">
             <Link to="/privacidade" className="hover:text-white">Termos e Política</Link>
             <span className="mx-4">|</span>
@@ -127,4 +178,4 @@ const BorderSolution = () => {
   );
 };
 
-export default BorderSolution;
+export default ElectoralSolution;
