@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { NavBar } from '@/components/NavBar';
 import { Button } from '@/components/Button';
@@ -15,7 +14,7 @@ const AboutUs = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/lovable-uploads/584c0eb9-4a0c-4a18-b384-2776e998ccc5.png')`
+            backgroundImage: `url('/lovable-uploads/f4a6e2eb-43de-46a4-8a57-9aa107b7ac6d.png')`
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
