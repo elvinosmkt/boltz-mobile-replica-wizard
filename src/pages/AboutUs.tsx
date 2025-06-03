@@ -15,10 +15,10 @@ const AboutUs = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('/lovable-uploads/c80b2127-27ae-4e9e-aed2-56633043713a.png')`
+            backgroundImage: `url('/lovable-uploads/584c0eb9-4a0c-4a18-b384-2776e998ccc5.png')`
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         
         <div className="relative z-10 max-w-6xl mx-auto">
           {/* Hero Title */}
@@ -26,38 +26,46 @@ const AboutUs = () => {
             <h1 className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8">
               Quem somos
             </h1>
-            <p className="text-lg mb-8 lg:text-xl max-w-2xl mx-auto">
-              Criamos tecnologia Open BIO Advanced na OpenBio que acredita em uma visão dos soluções de identificação biométrica, assegurando a identidade única & inovadora.
+            <p className="text-lg mb-8 lg:text-xl max-w-3xl mx-auto leading-relaxed">
+              Com a formação do Grupo Akiyama, a <span className="font-bold">OpenBio se consolida como líder em soluções de identificação biométrica</span>, oferecendo tecnologias avançadas e inovadoras.
             </p>
           </div>
 
           {/* Company Info Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <div className="grid md:grid-cols-2 gap-12 lg:gap-16 text-left max-w-5xl mx-auto">
             <div>
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">A empresa é uma referência</h3>
-              <p className="text-gray-300 text-sm">
-                20 anos de experiência em soluções biométricas e identificação digital de alta tecnologia.
+              <h3 className="font-bold text-lg mb-4 border-b border-gray-600 pb-2">
+                Especializados no desenvolvimento de hardware e software
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                proprietários, proporcionamos desde leitores biométricos até sistemas completos de identificação digital, aplicados em setores como eleições, segurança pública, bancos e acessos corporativos.
               </p>
             </div>
 
             <div>
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Estamos criados o primeiro</h3>
-              <p className="text-gray-300 text-sm">
-                Sistema integrado de identificação biométrica para instituições governamentais e privadas.
+              <h3 className="font-bold text-lg mb-4 border-b border-gray-600 pb-2">
+                Nossa missão é garantir processos mais seguros, eficientes e confiáveis
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                sempre alinhados às normas internacionais e às necessidades do mercado.
               </p>
             </div>
 
             <div>
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Somente, conseguimos por</h3>
-              <p className="text-gray-300 text-sm">
-                Nossa dedicação em oferecer soluções inovadoras e confiáveis para nossos clientes.
+              <h3 className="font-bold text-lg mb-4 border-b border-gray-600 pb-2">
+                Com sede em Curitiba e unidade fabril em Pato Branco
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                estamos presentes em diversos estados brasileiros e prestamos suporte técnico em milhares de municípios.
               </p>
             </div>
 
             <div>
-              <h3 className="text-boltz-purple font-bold text-lg mb-3">Em OpenBio, transformamos</h3>
-              <p className="text-gray-300 text-sm">
-                Tecnologia em soluções práticas que garantem segurança e eficiência nos processos.
+              <h3 className="font-bold text-lg mb-4 border-b border-gray-600 pb-2">
+                Na OpenBio, transformamos a complexidade da biometria em soluções acessíveis, descomplicadas e precisas
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                conectando pessoas e protegendo identidades com a segurança e inovação que nossos clientes merecem.
               </p>
             </div>
           </div>
