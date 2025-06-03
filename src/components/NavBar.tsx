@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, Search, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
@@ -13,11 +13,28 @@ import {
 
 export const NavBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
-      <header className="w-full bg-transparent py-4 px-5 flex justify-between items-center fixed top-0 left-0 z-50 lg:px-8 lg:py-6">
-        <Logo />
+      <header className={`w-full py-4 px-5 flex justify-between items-center fixed top-0 left-0 z-50 lg:px-8 lg:py-6 transition-all duration-300 ${
+        isScrolled 
+          ? 'bg-black/90 backdrop-blur-sm shadow-lg' 
+          : 'bg-transparent'
+      }`}>
+        <Link to="/">
+          <Logo />
+        </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex lg:items-center lg:space-x-8">
