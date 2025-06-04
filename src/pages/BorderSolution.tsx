@@ -6,8 +6,14 @@ import { Footer } from '@/components/Footer';
 import { CTASection } from '@/components/CTASection';
 import { TimelineItem } from '@/components/TimelineItem';
 import { FeatureCard } from '@/components/FeatureCard';
+import { useImagePreloader } from '@/hooks/useImagePreloader';
 
 const BorderSolution = () => {
+  // Preload critical hero image
+  useImagePreloader([
+    '/lovable-uploads/Bg_pag_PF_Mobile.png'
+  ]);
+
   return (
     <div className="min-h-screen bg-black text-white font-objective">
       <NavBar />
