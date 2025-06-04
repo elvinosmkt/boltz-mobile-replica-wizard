@@ -1,13 +1,17 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { Menu, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo, LogoMobile } from './Logo';
 import { MobileMenu } from './MobileMenu';
+import { useCriticalImages } from '@/hooks/useImagePreloader';
 
-export const NavBar = () => {
+const NavBar = memo(() => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // Precarregar imagens críticas
+  useCriticalImages();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,4 +74,8 @@ export const NavBar = () => {
       />
     </>
   );
-};
+});
+
+NavBar.displayName = 'NavBar';
+
+export { NavBar };
