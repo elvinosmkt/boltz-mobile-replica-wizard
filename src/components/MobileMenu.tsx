@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { X, ChevronDown, ChevronRight } from 'lucide-react';
+import React from 'react';
+import { X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Logo } from './Logo';
 
@@ -10,8 +10,6 @@ interface MobileMenuProps {
 }
 
 export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
-  const [showSolutions, setShowSolutions] = useState(false);
-
   if (!isOpen) return null;
 
   return (
@@ -29,40 +27,13 @@ export const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         
         <nav className="p-6">
           <div className="space-y-6">
-            <div>
-              <button 
-                onClick={() => setShowSolutions(!showSolutions)}
-                className="flex items-center justify-between w-full text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
-              >
-                Soluções
-                {showSolutions ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
-              </button>
-              {showSolutions && (
-                <div className="ml-4 mt-3 space-y-3">
-                  <Link 
-                    to="/solucoes/cadastramento-eleitoral" 
-                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
-                    onClick={onClose}
-                  >
-                    Cadastramento Eleitoral | TSE
-                  </Link>
-                  <Link 
-                    to="/solucoes/instituicoes-financeiras" 
-                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
-                    onClick={onClose}
-                  >
-                    Instituições Financeiras | Banco do Brasil
-                  </Link>
-                  <Link 
-                    to="/solucoes/controle-fronteiras" 
-                    className="block text-md text-gray-600 hover:text-[#7918f9] transition-colors"
-                    onClick={onClose}
-                  >
-                    Controle de Fronteiras | Polícia Federal
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Link 
+              to="/solucoes" 
+              className="block text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
+              onClick={onClose}
+            >
+              Soluções
+            </Link>
             <Link 
               to="/quem-somos" 
               className="block text-lg text-gray-800 hover:text-[#7918f9] transition-colors"
