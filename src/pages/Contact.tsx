@@ -1,11 +1,15 @@
 
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import { NavBar } from '@/components/NavBar';
-import { Button } from '@/components/Button';
+import { Footer } from '@/components/Footer';
 import { Logo } from '@/components/Logo';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Link } from 'react-router-dom';
+import { AnimatedSection } from '@/components/motion/AnimatedSection';
+import { AnimatedCard } from '@/components/motion/AnimatedCard';
+import { AnimatedButton } from '@/components/motion/AnimatedButton';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -41,16 +45,22 @@ const Contact = () => {
       {/* Header Section */}
       <section className="pt-32 pb-16 px-5">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold mb-8 lg:text-6xl text-white">
+          <motion.h1 
+            className="text-4xl font-bold mb-8 lg:text-6xl text-white"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
             Fale conosco
-          </h1>
+          </motion.h1>
         </div>
       </section>
 
       {/* Contact Form */}
       <section className="pb-16 px-5">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-black rounded-lg p-8 relative overflow-hidden border border-gray-800">
+          <AnimatedCard>
+            <div className="bg-black rounded-lg p-8 relative overflow-hidden border border-gray-800">
             {/* Background image */}
             <div 
               className="absolute inset-0 opacity-30"
@@ -67,7 +77,12 @@ const Contact = () => {
             
             <form onSubmit={handleSubmit} className="relative z-10">
               {/* Company Type */}
-              <div className="mb-6">
+              <motion.div 
+                className="mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
                 <Label className="text-white text-lg font-medium mb-4 block">Tipo de Empresa</Label>
                 <div className="flex gap-6">
                   <label className="flex items-center text-white">
@@ -93,10 +108,15 @@ const Contact = () => {
                     Setor Público/Governo
                   </label>
                 </div>
-              </div>
+              </motion.div>
 
               {/* Personal Data */}
-              <div className="mb-6">
+              <motion.div 
+                className="mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 <Label className="text-white text-lg font-medium mb-4 block">Dados</Label>
                 
                 <div className="grid md:grid-cols-2 gap-4 mb-4">
@@ -186,10 +206,15 @@ const Contact = () => {
                     required
                   />
                 </div>
-              </div>
+              </motion.div>
 
               {/* Contact Preference */}
-              <div className="mb-8">
+              <motion.div 
+                className="mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
                 <Label className="text-white text-lg font-medium mb-4 block">Preferência de contato</Label>
                 <div className="flex gap-6">
                   <label className="flex items-center text-white">
@@ -226,13 +251,20 @@ const Contact = () => {
                     Ligação
                   </label>
                 </div>
-              </div>
+              </motion.div>
 
-              <Button type="submit" className="w-auto">
-                Enviar
-              </Button>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <AnimatedButton type="submit" className="w-auto">
+                  Enviar
+                </AnimatedButton>
+              </motion.div>
             </form>
-          </div>
+            </div>
+          </AnimatedCard>
         </div>
       </section>
 
@@ -243,48 +275,27 @@ const Contact = () => {
              }}
            >
              <div className="relative z-10 max-w-lg mx-auto text-center lg:max-w-4xl">
-               <h2 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}>
+               <motion.h2 
+                 className="text-white font-medium text-2xl mb-6 lg:text-4xl lg:mb-12" 
+                 style={{ textShadow: '0px 2px 10px rgb(0,0,0,1)' }}
+                 initial={{ opacity: 0, y: 30 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8, ease: "easeOut" }}
+               >
                  Transformamos tecnologia em segurança
-               </h2>
-               <Button className="mx-auto">Fale conosco</Button>
+               </motion.h2>
+               <motion.div
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+               >
+                 <AnimatedButton className="mx-auto">Fale conosco</AnimatedButton>
+               </motion.div>
              </div>
            </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-10 px-5 border-t border-gray-800 lg:py-16">
-        <div className="max-w-lg mx-auto lg:max-w-6xl">
-          <div className="lg:grid lg:grid-cols-4 lg:gap-8">
-            <div className="lg:col-span-1">
-              <Logo className="mb-8" />
-            </div>
-            
-            <div className="mb-8 lg:mb-0">
-              <h3 className="font-bold mb-4 lg:text-lg">Soluções</h3>
-              <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
-                <li>Cadastramento Eleitoral | TSE</li>
-                <li>Instituições Financeiras | Banco do Brasil</li>
-                <li>Controle de Fronteiras | Polícia Federal</li>
-              </ul>
-            </div>
-            
-            <div className="mb-8 lg:mb-0">
-              <h3 className="font-bold mb-4 lg:text-lg">Quem Somos</h3>
-              <ul className="space-y-2 text-sm text-gray-400 lg:text-base lg:space-y-3">
-                <li>Nosso CEO</li>
-                <li>Carreira</li>
-              </ul>
-            </div>
-            
-            <div className="mb-8 lg:mb-0">
-              <h3 className="font-bold mb-4 lg:text-lg">Termos e Política</h3>
-            </div>
-          </div>
-          
-          <div className="mt-8 text-xs text-gray-500 lg:text-center lg:mt-12 lg:pt-8 lg:border-t lg:border-gray-800">
-            Copyright Openbio 2025
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   );
 };

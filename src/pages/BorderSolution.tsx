@@ -21,8 +21,8 @@ const BorderSolution = () => {
       <NavBar />
 
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center" 
+      <section
+        className="relative min-h-screen flex items-center justify-center px-5 bg-cover bg-center"
         style={{
           backgroundImage: 'url(/lovable-uploads/Bg_pag_PF_Mobile.png)',
           backgroundSize: 'cover',
@@ -32,7 +32,7 @@ const BorderSolution = () => {
       >
         <div className="absolute inset-0 bg-black bg-opacity-30"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <motion.h1 
+          <motion.h1
             className="text-4xl font-bold mb-6 leading-tight lg:text-6xl lg:mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -40,15 +40,17 @@ const BorderSolution = () => {
           >
             Solução para Controle de Fronteiras | Polícia Federal
           </motion.h1>
-          <motion.p 
+          <motion.p
             className="text-lg mb-8 lg:text-xl max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            Tecnologia avançada de identificação biométrica para segurança nas fronteiras brasileiras. 
-            Soluções robustas que garantem controle eficiente de entrada e saída de pessoas, 
-            proporcionando maior segurança nacional e agilidade nos processos de imigração.
+            Ao contrário das soluções tradicionais baseadas em kits de equipamentos burocráticos,
+            esta projeta de modelo e implementação de uma tecnologia exclusiva para apoio à
+            Polícia Federal no controle do tráfico de pessoas nas fronteiras. A solução oferece uma
+            certificação precisa e ágil na autenticidade dos documentos de imigração, reduzindo
+            significativamente o tempo de processamento e aumentando a segurança nas fronteiras.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -60,93 +62,105 @@ const BorderSolution = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
-      <section className="bg-white py-16 px-5 lg:py-24">
-        <div className="max-w-4xl mx-auto">
-          <AnimatedSection animation="fadeIn" className="text-center mb-12">
-            <h2 className="text-black font-bold text-2xl lg:text-4xl">
-              Evolução do Projeto
-            </h2>
-          </AnimatedSection>
+      {/* RealPass Section */}
+      <section className="bg-white text-black py-16 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold mb-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            RealPass
+          </motion.h2>
+          <motion.h3
+            className="text-lg md:text-xl text-gray-600 mb-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Leitor de Documentos
+          </motion.h3>
+          <motion.p
+            className="text-sm md:text-base text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            O RealPass é um dispositivo inovador de leitura de documentos, projetado
+            para oferecer máxima precisão em diferentes comprimentos de
+            ondas visíveis, UV e IVA, garantindo uma solução confiável e precisa para a
+            autenticação e autenticação de documentos.
+          </motion.p>
+          <motion.h4
+            className="text-lg md:text-xl font-semibold mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            Segurança e Inovação em um único dispositivo.
+          </motion.h4>
 
-          <div className="space-y-12">
-            <AnimatedSection animation="slideUp" delay={0.1}>
-              <TimelineItem
-                icon="🛂"
-                title="2010 — Projeto Piloto Fronteiras"
-                description="Implementação inicial em 5 pontos de fronteira estratégicos com tecnologia biométrica de reconhecimento facial e digital."
-                isActive={true}
-              />
-            </AnimatedSection>
+          {/* Device Images */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Device Image 1 */}
+            <motion.div
+              className="bg-black rounded-lg items-center justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+                backgroundImage: 'url(/lovable-uploads/realpass.png)',
+                backgroundPosition: 'center top',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+              }}></div>
+            </motion.div>
 
-            <AnimatedSection animation="slideUp" delay={0.2}>
-              <TimelineItem
-                icon="🌎"
-                title="2012 a 2015 — Expansão Nacional"
-                description="Expansão para mais de 50 pontos de fronteira em todo território nacional, incluindo aeroportos internacionais e postos terrestres."
-                isActive={true}
-              />
-            </AnimatedSection>
+            {/* Device Image 2 */}
+            <motion.div
+              className="bg-gray-200 rounded-lg items-center justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+                backgroundImage: 'url(/lovable-uploads/realpass2.png)',
+                backgroundPosition: 'center top',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+              }}></div>
+            </motion.div>
 
-            <AnimatedSection animation="slideUp" delay={0.3}>
-              <TimelineItem
-                icon="🔒"
-                title="2016 — Sistema Integrado"
-                description="Integração com bases de dados internacionais e sistemas de segurança para identificação de pessoas procuradas."
-                isActive={false}
-              />
-            </AnimatedSection>
-
-            <AnimatedSection animation="slideUp" delay={0.4}>
-              <TimelineItem
-                icon="📊"
-                title="2018 a 2024 — Modernização Contínua"
-                description="Atualização constante dos sistemas com IA e machine learning para detecção de fraudes e melhor precisão."
-                isActive={false}
-              />
-            </AnimatedSection>
+            {/* Device Image 3 */}
+            <motion.div
+              className="bg-gray-200 rounded-lg items-center justify-center"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
+                backgroundImage: 'url(/lovable-uploads/realpass3.png)',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover'
+              }}></div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Products Section */}
-      <section className="bg-gray-100 py-16 px-5 lg:py-24">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedSection animation="fadeIn" className="text-center mb-12">
-            <h2 className="text-black font-bold text-2xl lg:text-4xl">
-              Soluções Tecnológicas
-            </h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Equipamentos e sistemas especializados para controle de fronteiras com máxima precisão e segurança.
-            </p>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <FeatureCard
-              icon="🛂"
-              title="Sistema de Reconhecimento Facial"
-              delay={0}
-            />
-
-            <FeatureCard
-              icon="📱"
-              title="Scanner Biométrico Móvel"
-              delay={0.2}
-            />
-
-            <FeatureCard
-              icon="🖥️"
-              title="Central de Monitoramento"
-              variant="dark"
-              iconBg="bg-black"
-              delay={0.4}
-            />
-          </div>
-        </div>
-      </section>
-
-      <CTASection 
-        title="Garanta a segurança das fronteiras brasileiras com nossa tecnologia"
+      <CTASection
+        title="Saiba como podemos otimizar seus processos
+            com soluções inovadoras"
         buttonText="Fale conosco"
       />
 

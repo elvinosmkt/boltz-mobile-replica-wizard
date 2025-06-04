@@ -29,7 +29,7 @@ const Solutions = () => {
           backgroundSize: 'cover'
         }}>
         <div className="relative z-10 text-center max-w-7xl mx-auto">
-          <motion.h1 
+          <motion.h1
             className="text-4xl font-medium mb-6 leading-tight lg:text-6xl 2xl:text-7xl lg:mb-8"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,9 +37,9 @@ const Solutions = () => {
           >
             Somos defensores da unicidade
           </motion.h1>
-          <div className='w-full flex items-center justify-center'> 
-            <motion.p 
-              className="w-1/2 2xl:w-2/3 text-lg mb-8 lg:text-xl 2xl:text-3xl"
+          <div className='w-full flex items-center justify-center'>
+            <motion.p
+              className="w-full 2xl:w-2/3 text-lg mb-8 lg:text-xl 2xl:text-3xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -66,13 +66,13 @@ const Solutions = () => {
                 Tecnologia a Serviço da Identificação
               </h2>
             </AnimatedSection>
-            
+
             <AnimatedSection animation="slideUp" delay={0.1}>
               <h3 className="text-black font-bold text-2xl mb-3">Cadastro Civil e Emissão de Documentos:</h3>
               <p className="text-gray-600 text-2xl">
                 Soluções biométricas para emissão de documentos civis, garantindo segurança e autenticidade.
               </p>
-              <motion.div 
+              <motion.div
                 className='h-1 bg-[#7918f9] w-[100px] mt-10'
                 initial={{ width: 0 }}
                 whileInView={{ width: 100 }}
@@ -85,7 +85,7 @@ const Solutions = () => {
               <p className="text-gray-600 text-2xl">
                 Tecnologia para identificação post mortem com soluções exclusivas, facilitando a emissão de Laudos Médicos de Atestado de Óbito.
               </p>
-              <motion.div 
+              <motion.div
                 className='h-1 bg-[#7918f9] w-[100px] mt-10'
                 initial={{ width: 0 }}
                 whileInView={{ width: 100 }}
@@ -98,7 +98,7 @@ const Solutions = () => {
               <p className="text-gray-600 text-2xl">
                 Autenticação segura digital para controle de acesso e identificação precisa de funcionários.
               </p>
-              <motion.div 
+              <motion.div
                 className='h-1 bg-[#7918f9] w-[100px] mt-10'
                 initial={{ width: 0 }}
                 whileInView={{ width: 100 }}
@@ -111,7 +111,7 @@ const Solutions = () => {
               <p className="text-gray-600 text-2xl">
                 Soluções avançadas para o segmento financeiro com experiência comprovada em projetos de larga escala para prevenção a fraudes.
               </p>
-              <motion.div 
+              <motion.div
                 className='h-1 bg-[#7918f9] w-[100px] mt-10'
                 initial={{ width: 0 }}
                 whileInView={{ width: 100 }}
@@ -124,7 +124,7 @@ const Solutions = () => {
               <p className="text-gray-600 text-2xl">
                 Controle de identificação de internos e visitantes, integrado com instituições físicas.
               </p>
-              <motion.div 
+              <motion.div
                 className='h-1 bg-[#7918f9] w-[100px] mt-10'
                 initial={{ width: 0 }}
                 whileInView={{ width: 100 }}
@@ -178,14 +178,14 @@ const Solutions = () => {
           <div className="space-y-8">
             <AnimatedCard delay={0}>
               <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
-                backgroundImage: 'url(/lovable-uploads/0ef50083-4702-430b-9cee-ff65b056dffb.png)',
+                backgroundImage: 'url(/lovable-uploads/Bg_pag_TSE_Mobile.png)',
                 backgroundPosition: 'center bottom',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}>
                 <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 hover:bg-opacity-20"></div>
                 <div className="relative z-10 p-8 h-full flex flex-col justify-end items-center text-center pb-16">
-                  <motion.h3 
+                  <motion.h3
                     className="text-white font-medium text-2xl mb-4 lg:text-4xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -193,24 +193,24 @@ const Solutions = () => {
                   >
                     Solução para Cadastramento Eleitoral | TSE
                   </motion.h3>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                   >
                     <strong>Maior parque</strong> de cadastramento biométrico <strong>do mundo.</strong>
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                   >
                     Fornecendo tecnologia para o TSE desde 2008.
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-6 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-6 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
@@ -222,7 +222,9 @@ const Solutions = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                   >
-                    <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    <a href="/solucoes/cadastramento-eleitoral">
+                      <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    </a>
                   </motion.div>
                 </div>
               </div>
@@ -230,14 +232,14 @@ const Solutions = () => {
 
             <AnimatedCard delay={0.2}>
               <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
-                backgroundImage: 'url(/lovable-uploads/b5d86670-783b-477d-b178-5b2d89b11327.png)',
+                backgroundImage: 'url(/lovable-uploads/Bg_pag_PF_Mobile.png)',
                 backgroundPosition: 'center bottom',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}>
                 <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 hover:bg-opacity-20"></div>
                 <div className="relative z-10 p-8 h-full flex flex-col justify-end items-center text-center pb-16">
-                  <motion.h3 
+                  <motion.h3
                     className="text-white font-medium text-2xl mb-4 lg:text-4xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -245,24 +247,24 @@ const Solutions = () => {
                   >
                     Controle de Fronteiras | Polícia Federal
                   </motion.h3>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                   >
                     Tecnologia avançada para segurança nas fronteiras.
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                   >
                     Sistemas biométricos em pontos estratégicos.
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-6 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-6 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
@@ -274,7 +276,9 @@ const Solutions = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                   >
-                    <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    <a href="/solucoes/controle-fronteiras">
+                      <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    </a>
                   </motion.div>
                 </div>
               </div>
@@ -282,14 +286,14 @@ const Solutions = () => {
 
             <AnimatedCard delay={0.4}>
               <div className="relative rounded-lg overflow-hidden h-[600px] bg-cover bg-center bg-black" style={{
-                backgroundImage: 'url(/lovable-uploads/11dc74b0-c29e-4cdb-91ae-661240eff951.png)',
+                backgroundImage: 'url(/lovable-uploads/Bg_pag_BB_Mobile.png)',
                 backgroundPosition: 'center bottom',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover'
               }}>
                 <div className="absolute inset-0 bg-black bg-opacity-30 transition-opacity duration-300 hover:bg-opacity-20"></div>
                 <div className="relative z-10 p-8 h-full flex flex-col justify-end items-center text-center pb-16">
-                  <motion.h3 
+                  <motion.h3
                     className="text-white font-medium text-2xl mb-4 lg:text-4xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -297,24 +301,24 @@ const Solutions = () => {
                   >
                     Solução para Instituições Financeiras | Banco do Brasil
                   </motion.h3>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 }}
                   >
                     Tecnologia biométrica para segurança bancária.
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-4 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-2 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
                   >
                     Identificação precisa e confiável de clientes.
                   </motion.p>
-                  <motion.p 
-                    className="text-white text-xl mb-6 max-w-2xl"
+                  <motion.p
+                    className="text-white text-sm 2xl:text-xl mb-6 max-w-2xl"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
@@ -326,7 +330,9 @@ const Solutions = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
                   >
-                    <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    <a href="/solucoes/instituicoes-financeiras">
+                      <Button variant="primary" className="bg-purple-600 hover:bg-purple-700">Saiba mais</Button>
+                    </a>
                   </motion.div>
                 </div>
               </div>
